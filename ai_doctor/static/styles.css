@@ -1,0 +1,379 @@
+ * {
+    font-family: "Inter";
+    margin: 0;
+    padding: 0;
+ }
+ body {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    height: 100vh;
+}
+
+.menu, .right-side {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 20px;
+    background-color: white;
+    width: 14%;
+    height: 90%;
+    margin-top: 20px;
+    margin-left: 14px;
+    border-radius: 10px;
+    max-height: 100%;
+    overflow: scroll;
+}
+.right-side {
+    width: 76%;
+    align-items: center;
+}
+
+.sign-form {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.sign-form input {
+    background-color: black;
+    border: 0;
+    border-radius: 15px;
+    height: 20px;
+    padding: 5px 8px;
+    width: 300px;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    width: auto;
+    padding: 5px 15px;
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.logo, ul {
+    margin-bottom: 130px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.big_word, .small_word, h1 {
+    font-family: "Inter";
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -8px;
+    margin-right: 8px;
+    font-style: italic;
+    margin-bottom: -25px;
+}
+.small_word {
+    font-size: 20px;
+    letter-spacing: normal;
+}
+h1 {
+    font-size: 60px;
+    letter-spacing: normal;
+    margin-bottom: 10px;
+    text-align: center;
+}
+ul {
+    gap: 30px;
+}
+
+ul li {
+    color: black;
+    list-style-type: none;
+    font-size: 20px;
+    font-family: "Inter";
+    font-style: italic;
+    font-weight: 400;
+    transition: 0.2s;
+}
+li a {
+    color: black;
+    text-decoration: none;
+}
+li:hover {
+    transform: scale(1.2);
+}
+
+.join {
+    margin-top: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    font-family: "Inter";
+    font-weight: 200;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.background {
+    background-image: url(AI\ Doctor-2.png);
+    background-position: center; /* Centers the image */
+   /* Scales the image to cover the entire container */ /* Set container width */
+  }
+
+.right-message, .left-message {
+    display: flex;
+    max-width: 100%;
+    color: white;
+    border-radius: 15px;
+    margin: 3px;
+}
+
+.right-message {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.right-message p, .left-message p {
+    background-color: #4e4e4e;
+    padding: 10px;
+    border-radius: 15px;
+    max-width: 70%;
+    font-size: 15px;
+}
+.left-message p {
+    background-color: #000;
+}
+
+.messages-form {
+    margin: 0;
+    width: 100%;
+    flex-direction: row;
+}
+.input-container {
+    margin-top: auto;
+    width: 90%;
+    background-color: blue;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border-radius: 15px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 35px;
+    
+}
+
+#message {
+    width: 90%; margin-top: 0;
+}
+.buttonSender {
+    background-color: white;
+    margin-bottom: 10px;
+    margin-right: 4px;
+}
+
+.messages-container {
+    height: 98%;
+    width: 100%;
+    flex-direction: row;
+    overflow: scroll;
+}
+.itemsContainer {
+    height: 90%;
+    width: 76%;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 3%;
+    margin-top: 20px;
+    margin-left: 14px;
+    border-radius: 10px;
+    max-height: 100%;
+    padding: 20px;
+    overflow: scroll;
+    align-content: flex-start;
+}
+.item {
+    background-color: #000;
+    color: white;
+    height: 180px;
+    padding: 10px;
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+    transition: 0.3s;
+    border-radius: 15px;
+}
+
+.profile {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    align-items: center;
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.see-doctor {
+    text-align: center;
+    padding: 5px 15px;  
+    border-radius: 15px;
+    width: 80%;
+    background-color: white;
+    color: #000;
+    margin-top: auto;
+}
+
+.doctor-details-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 10px;
+    justify-content: start;
+}
+.image-doctor-container{
+display: flex;
+text-align: center;
+margin: 20px;
+align-items: center;
+justify-content: space-around;
+}
+
+.doctor-info-container {
+    width: 50%;
+}
+
+.doctor-address-big-container {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    margin: 20px;
+    align-items: center;
+    justify-content: space-around;
+}
+.doctor-address-container {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    font-size: 20px;
+}
+
+.button-book {
+    margin-top: auto;
+    padding: 20px 50px;
+}
+
+.appointment {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 3px;
+    border-radius: 15px;
+}
+
+.square-pic {
+    width: 225px;
+    height: 225px;
+}
+@media (max-width: 850px){
+    .item {
+        width: 40%;
+    }
+    .itemsContainer {
+        gap: 8%;
+    }
+}
+
+@media (max-width: 550px){
+    .itemsContainer {
+        justify-content: center;
+    }
+    .item {
+        width: 70%;
+    }
+    body {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        gap: 20px;
+        height: 100vh;
+    }
+    .menu {
+        display: flex;
+        width: 76%;
+        height: auto;
+        margin-right: 14px;
+        align-items: center;
+    }
+    .logo {
+        margin-bottom: 20px;
+    }
+    ul {
+        margin-bottom: 20px;
+        flex-direction: row;
+    }
+    .right-side {
+        margin-right: 14px;
+        height: 67%;
+        margin-top: 0;
+    }
+    .sign-form {
+        margin-top: 100px;
+    }
+    .image-doctor-container {
+        flex-direction: column;
+    }
+    .square-pic {
+        width: 100px;
+        height: 100px;
+    }
+    h1, #appoint {
+        font-size: 20px;
+    }
+    p {
+        font-size: 10px;
+    }
+    .doctor-address-big-container {
+        flex-direction: column;
+    }
+    .doctor-address-container p {
+        font-size: 10px;
+    }
+    .doctor-address-container {
+        margin-bottom: 10%;
+    }
+    .menu {
+        overflow: hidden;
+    }
+    .appoint {
+        font-size: 20px;
+    }
+    
+}

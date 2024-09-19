@@ -1,0 +1,19 @@
+{% extends 'ai_doctor/layout.html' %}
+{% block main %}
+<div class="right-side">
+    <form action="{% url 'register' %}" method="post" class="sign-form">
+        {% csrf_token %}
+        <h1>register</h1>
+        <input type="text" name="username" id="username" placeholder="username" required>
+        <input type="email" name="email" placeholder="email" required>
+        <input type="password" name="password" id="password" placeholder="password" required>
+        <input type="password" name="passwordCon" id="password" placeholder="password(again)" required>
+        <button type="submit">register</button>
+        {% if messages %}
+            {% for message in messages %}
+                <p style="color: red;">{{ message }}</p>
+            {% endfor %}
+        {% endif %}
+    </form>
+</div>
+{% endblock %}
