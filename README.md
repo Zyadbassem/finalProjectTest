@@ -1,9 +1,9 @@
-#AI DOCTOR
+# AI DOCTOR
 
 AI Doctor is a web application designed to help users assess their health concerns through an AI-powered assistant. Whether you're experiencing a headache, stomachache, or even recovering from an injury, AI Doctor allows you to describe your symptoms and receive recommendations. The AI will analyze the problem and suggest if it’s necessary to consult a doctor. If a consultation is recommended, the app will provide a list of doctors along with the ability to book an appointment directly through the website. The platform is also open to doctors who want to join and serve the community.
 
 
-#Distinctiveness and Complexity
+# Distinctiveness and Complexity
 Distinctiveness: This project is distinct because it goes beyond the typical scope of social media or e-commerce platforms seen in other projects. AI Doctor is a unique web application that integrates AI-powered health suggestions with a doctor booking system. Unlike a typical social network, this project focuses on healthcare and well-being, using natural language processing (NLP) and AI to determine the best course of action for users based on their symptoms. Furthermore, this is not an e-commerce website, as the core functionality revolves around healthcare consultation, not transactions.
 Complexity:-
 1- AI Integration: The web application utilizes a machine learning API (Gemini API) to process user input and make decisions based on the symptoms described.
@@ -12,7 +12,7 @@ Complexity:-
 4- Mobile Responsiveness: The entire application is designed to be mobile-responsive, ensuring that users on any device can access it comfortably.
 5- API Integration: It pulls from a third-party API for intelligent doctor recommendations, ensuring the project is both informative and functional.
 
-#File Structure and Contents
+# File Structure and Contents
 - manage.py: Django’s command-line utility for administrative tasks.
 - finalproject/: Main project directory, containing the settings and configuration files for the Django project.
 - settings.py: The main settings file, including configurations for API keys and databases.
@@ -25,7 +25,7 @@ Complexity:-
 - requirements.txt: Python packages required for the project.
 - README.md: Documentation for the project.
 
-#how to run the application
+# how to run the application
 1. Clone the Repository from GitHub
 Use the git clone command to clone the repository to your local machine. Replace USERNAME with your GitHub username in the command: 
 git clone https://github.com/me50/Zyadbassem.git
