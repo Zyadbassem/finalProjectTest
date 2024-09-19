@@ -1,0 +1,4 @@
+Django==4.2.1  # Adjust the version based on your project
+djangorestframework==3.14.0  # For building REST APIs
+requests==2.28.1  # If you are making external API calls
+python-decouple==3.8  # For environment variable management (.env file)
