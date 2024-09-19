@@ -1,0 +1,46 @@
+{% extends 'ai_doctor/layout.html' %}
+{% load static %}
+{% block main %}
+<div class="right-side background" id="home_page">
+    <div class="messages-container" >
+
+    </div>
+    <form class="sign-form messages-form" id="conversation"> 
+        <div  class="input-container" >
+        <input type="text" id="message" placeholder="How can I help you...">
+        <button class="buttonSender"><i class="fa-solid fa-paper-plane" style="color: black;"></i></button>
+    </div>
+        {% if messages %}
+        {% for message in messages %}
+            <p style="color: red;">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    </form>
+</div>
+<div class="itemsContainer" style="display: none;" id="doctors_page">
+    {% if message %}
+    <h2>{{message}}</h2>
+    {% endif %}
+    </div>
+<div class="right-side" style="display: none;" id="join_page">
+    <form id="join_us" method="POST" enctype="multipart/form-data" class="sign-form">
+        {% csrf_token %}
+        <input type="text" id="doctor_name" name="name" placeholder="name" required>
+        <input type="email" id="doctor_email" name="email" required placeholder="email">
+        <input type="text" id="doctor_speciality" name="speciality" required placeholder="speciality">
+        <input type="text" id="doctor_address" name="address" required placeholder="address">
+        <input type="text" id="doctor_number" name="number" required placeholder="number">
+        <input type="file" id="doctor_image" name="image" required placeholder="image">
+        <button type="submit">Join</button>
+    </form>
+    
+</div>
+<div class="right-side" style="display: none; overflow: hidden;" id="doctor_page">
+    <div class="doctor-details-container" style="height: auto; margin-top: 80px; overflow: hidden;">
+        
+    </div>
+</div>
+
+<div class="right-side" style="display: none;" id="userPage">
+</div>
+{% endblock %}
